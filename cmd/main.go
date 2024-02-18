@@ -18,19 +18,19 @@ type Year struct {
 	Chetime   string `json:"cachetid,omitempty"`
 	Startdate string `json:"startdatum,omitempty"`
 	Enddate   string `json:"slutdatum,omitempty"`
-	Days      []Date `json:"dagar,omitempty"`
+	Days      []Date `json:"dagar"`
 }
 
 type Date struct {
-	Date        string   `json:"datum,omitempty"`
-	Weekday     string   `json:"veckodag,omitempty"`
-	WorkfreeDay string   `json:"arbetsfri dag,omitempty"`
-	Holiday     string   `json:"helgdag,omitempty"`
-	RedDay      string   `json:"röd dag,omitempty"`
-	Week        string   `json:"vecka,omitempty"`
-	WeekdayNo   string   `json:"dag i vecka,omitempty"`
-	Nameday     []string `json:"namnsdag,omitempty"`
-	Flagday     string   `json:"flaggdag,omitempty"`
+	Date        string   `json:"datum"`
+	Weekday     string   `json:"veckodag"`
+	WorkfreeDay string   `json:"arbetsfri dag"`
+	Holiday     string   `json:"helgdag"`
+	RedDay      string   `json:"röd dag"`
+	Week        string   `json:"vecka"`
+	WeekdayNo   string   `json:"dag i vecka"`
+	Nameday     []string `json:"namnsdag"`
+	Flagday     string   `json:"flaggdag"`
 	Specialday  []string `json:"specialdag,omitempty"`
 }
 
