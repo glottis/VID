@@ -9,9 +9,9 @@ import (
 )
 
 const (
-	layoutISO      = "2006-01-02"
-	shroveTuesday  = "Fettisdagen"
-	cinnaonRollDay = "Kanelbullens dag"
+	layoutISO       = "2006-01-02"
+	shroveTuesday   = "Fettisdagen"
+	cinnamonRollDay = "Kanelbullens dag"
 )
 
 type Year struct {
@@ -71,7 +71,7 @@ func main() {
 		for _, date := range year.Days {
 
 			if bunRegex.Match([]byte(date.Date)) {
-				date.Specialday = append(date.Specialday, cinnaonRollDay)
+				date.Specialday = append(date.Specialday, cinnamonRollDay)
 			}
 
 			if easterDay.Match([]byte(date.Holiday)) {
